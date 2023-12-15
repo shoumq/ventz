@@ -41,7 +41,7 @@
   left: 160rem !important;
   z-index: 999 !important;
   top: 5050rem !important;
-  background-image: url("/img/arrl.png") !important;
+  background-image: url("../img/arrl.png") !important;
   background-repeat: no-repeat;
   background-size: 40rem !important;
   color: transparent !important;
