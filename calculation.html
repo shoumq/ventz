@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body style="background-color: #E6E6E6;">
     <header class="header">
         <div class="container">
             <div class="header_flex">
@@ -20,12 +20,12 @@
                     <div class="header_item--gap">
                         <div class="header_item">
                             <img src="img/svg/bxs_phone.svg" alt="">
-                            <div>+7 (495) 151-16-55</div>
+                            <a href="tel:+7 (495) 151-16-55" style="color: #676767; text-decoration: none;">+7 (495) 151-16-55</a>
                         </div>
 
                         <div class="header_item">
                             <img src="img/svg/ant-design_mail-filled.svg" alt="">
-                            <div>info@tdventz.ru</div>
+                            <a href="mailto:info@tdventz.ru" style="color: #676767; text-decoration: none;">info@tdventz.ru</a>
                         </div>
                     </div>
 
@@ -38,7 +38,7 @@
         </div>
     </header>
 
-    <main style="background-color: #E6E6E6;">
+    <main>
         <img src="img/calc.png" alt="" class="calc_img1">
 
         <section>
@@ -128,6 +128,153 @@
                             </label>
                         </div>
                     </div>
+
+                    <div style="margin-bottom: 60rem;">
+                        <div class="calc_form--win_title">Вид расчета</div>
+
+                        <div class="calc_form--win_bigflex2" style="gap: 55rem;">
+                            <label for="ch2">
+                                <input id="ch2" type="checkbox" style="margin-right: 20rem;">Расчет на открытую дверь
+                            </label>
+
+                            <label for="ch3">
+                                <input id="ch3" type="checkbox" style="margin-right: 20rem;">Расчет на закрытую дверь
+                            </label>
+
+                            <label for="ch4">
+                                <input id="ch4" type="checkbox" style="margin-right: 20rem;">Воздушные завесы
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="calc_form--win_grid">
+                        <div>
+                            <div class="calc_form--win_title">Данные расчета</div>
+
+                            <div class="input">
+                                <label class="label" for="in2">Город
+                                    <input type="text" id="in2" placeholder="Москва">
+                                </label>
+                            </div>
+
+                            <div class="input">
+                                <label class="label" for="in3">Температура наружного воздуха ta, C
+                                    <input type="text" id="in3" placeholder="-26">
+                                </label>
+                            </div>
+
+                            <div class="input">
+                                <label class="label" for="in4">Количество дверей тамбур-шлюза
+                                    <input type="number" id="in4" placeholder="1">
+                                </label>
+                            </div>
+
+                            <div class="input">
+                                <label class="label" for="in5">Количество дверей лифтовых шахт
+                                    <input type="number" id="in5" placeholder="1">
+                                </label>
+                            </div>
+
+                            <div class="input">
+                                <label class="label">Площадь двери (створки) тамбур-шлюза Fdr, м2
+                                    <div class="label_flex">
+                                        <input type="number" id="in9" placeholder="Длина">
+                                        <input type="number" id="in10" placeholder="Ширина">
+                                        <input class="input_gray" type="number" id="in11" placeholder="0">
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="input">
+                                <label class="label" for="in6">Характеристика удельного сопротивления воздухопроницанию
+                                    дверей лифтовых<br>
+                                    шахт при 20°C. Sdl20, м3/кг
+                                    <input type="number" id="in6" placeholder="0">
+                                </label>
+                            </div>
+
+                            <div class="input">
+                                <label class="label" for="in7">Массовый расход воздуха, подаваемого в защищаемый
+                                    тамбур-шлюз<br>
+                                    (лифтовый холл), Gr, кг/с
+                                    <input type="number" id="in7" placeholder="0">
+                                </label>
+                            </div>
+
+                            <div class="input">
+                                <label class="label" for="in8">Характеристика удельного сопротивления воздухопроницанию
+                                    дверей<br>
+                                    защищаемого тамбур-шлюза (лифтового холла) Sdr20, м3/кг при 20°C
+                                    <input type="number" id="in8" placeholder="0">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="calc_form--win_title">Результаты расчета</div>
+
+                            <div class="calc_form--win_gray">
+                                <div class="calc_form--win_text">Введите данные чтобы <br>провести расчет</div>
+                                <img src="img/svg/calc_gray.svg" alt="" class="calc_form--win_calc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc_form--win_btnflex">
+                        <button class="calc_form--win_btn">ВЫПОЛНИТЬ РАСЧЕТ</button>
+                        <img src="img/logo_g.png" alt="">
+                    </div>
+                </div>
+
+
+                <div class="calc_arch">
+                    <div class="calc_arch--flex">
+                        <div class="calc_arch--title">Архив расчетов</div>
+                        <div style="display: flex; gap: 24rem;">
+                            <button class="btn_gray">Аэродинамический расчет</button>
+                            <button class="btn_gray">Скачать Word</button>
+                            <button class="btn_gray">Скачать PDF</button>
+                        </div>
+                    </div>
+
+                    <table class="calc_arch--table">
+                        <tr class="tr">
+                            <th>Дата</th>
+                            <th>Система</th>
+                            <th>Проект</th>
+                            <th>Вид Расчета</th>
+                            <th>Lr, m3/ч</th>
+                            <th>P</th>
+                            <th>Корзина</th>
+                        </tr>
+                        <tr>
+                            <td>2023-08-22 09:53:34</td>
+                            <td>Наименование системы</td>
+                            <td>Наименование проекта</td>
+                            <td>Расчет на закрытую дверь</td>
+                            <td>76750</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>2023-08-22 09:53:34</td>
+                            <td>Наименование системы</td>
+                            <td>Наименование проекта</td>
+                            <td>Расчет на закрытую дверь</td>
+                            <td>76750</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>2023-08-22 09:53:34</td>
+                            <td>Наименование системы</td>
+                            <td>Наименование проекта</td>
+                            <td>Расчет на закрытую дверь</td>
+                            <td>76750</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </section>
