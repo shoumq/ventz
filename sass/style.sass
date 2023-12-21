@@ -26,6 +26,10 @@ body
     padding-top: 10rem
     padding-bottom: 10rem
 
+    .btn_red, .btn_gray
+        text-decoration: none
+        height: 14rem
+
     &_flex
         display: flex
         align-items: center
@@ -766,6 +770,12 @@ label
         width: 100%
         padding-inline: 44rem
 
+        .trash
+            width: 24rem
+            height: 24rem
+            cursor: pointer
+            text-align: right
+
         th
             color: #404040
             font-size: 14rem
@@ -814,3 +824,97 @@ input[type=checkbox]:before
     background-size: cover
     display: inline-block
     margin-left: 5rem
+
+.login
+    position: relative
+    z-index: 99999
+    padding-top: 100rem
+    height: calc( 100vh - 100rem )
+    background: url('../img/login.png'), lightgray 50% / cover no-repeat
+
+    &_win
+        margin-top: 60rem
+        position: relative
+        display: flex
+        justify-content: center
+
+        &--nav
+            display: flex
+            gap: 9rem
+
+            &_item
+                display: flex
+                width: 100%
+                height: 64rem
+                padding: 0 34rem
+                justify-content: center
+                align-items: center
+                gap: 10rem
+                background: #fff
+                border-radius: 4rem 4rem 0 0
+                cursor: pointer
+                user-select: none
+                transition: .2s
+                text-decoration: none
+                color: #676767
+
+                &:hover
+                    background: #f6f8f9
+
+                &--active
+                    background: #78858A
+                    color: #fff
+                    font-weight: 700
+
+                    &:hover
+                        background: #78858A
+
+        &--body
+            border-radius: 0 0 8rem 8rem
+            background: #fff
+            padding: 61rem 45rem
+            padding-bottom: 50rem
+            width: 411rem
+            border-top: 1rem solid #CACACA
+
+            input
+                width: calc(100% - 35rem)
+
+            .input_pass
+                position: relative
+
+                img
+                    width: 24rem
+                    height: 24rem
+                    position: absolute
+                    cursor: pointer
+                    right: 16rem
+                    top: 45rem
+
+            .btn
+                display: flex
+                width: 100%
+                height: 58rem
+                padding: 10rem 24rem
+                justify-content: center
+                align-items: center
+                gap: 10rem
+                border-radius: 4rem
+                background: linear-gradient(90deg, #F00 0.13%, #FE4F4F 0.14%, #F00 94.87%)
+                margin-top: 60rem
+                font-size: 16rem
+                font-weight: 600
+                outline: none
+                border: none
+                color: #F0F0F0
+                cursor: pointer
+
+            .forget
+                color: #676767
+                text-align: center
+                font-size: 16rem
+                line-height: 24rem
+                text-decoration-line: underline
+                display: flex
+                justify-content: center
+                margin-top: 30rem
